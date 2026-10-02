@@ -1,0 +1,15 @@
+{
+  "skill_name": "homelab-k8s-deploy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quero subir o Kartrack no meu cluster k3s no Proxmox. Tenho: MySQL em VM dedicada (192.168.1.50:3306, user: kartrack, password: kartrack, db: kartrack), NFS no TrueNAS: 192.168.1.10:/mnt/pool/kartrack-uploads, MetalLB range: 192.168.1.241-192.168.1.254, domínio kartrack.kiwel.dev com TLS terminando no Cloudflare/Pangolin externamente, Docker Hub público kiwel/kartrack:v1, k3s single node. Gera o plano e os manifests completos.",
+      "expected_output": "Phase 1: dependency diagram, trade-offs table, risks, install order, final design table. Phase 2: k8s/ directory with 00-install.md, addons/ (metallb-pool.yaml, nginx-ingress-values.yaml, nfs-provisioner-values.yaml), app/ (namespace.yaml, secret.yaml, pvc.yaml, deployment.yaml, service.yaml, ingress.yaml). All real values filled in based on the provided context.",
+      "files": [
+        "/home/kiwel/git/Kartrack/docker-compose.yml",
+        "/home/kiwel/git/Kartrack/Dockerfile",
+        "/home/kiwel/git/Kartrack/backend/app/main.py"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+2026-09-28 11:32:04: -- Analysis Started by On File Change First Full Analyze Upon Folder Connect
+2026-09-28 11:32:04: L: Reading State File /home/kiwel/skills/_gsdata_/_file_state_v4._gs
+2026-09-28 11:32:04: R: Reading State File /mnt/NAS/Sync/Agentes/Skills/_gsdata_/_file_state_v4._gs
+2026-09-28 11:32:12: Changes: 32, Conflicts: 0, CopyTime: 0, FixState: 115, Errors: 0, All: 4419
+2026-09-28 11:32:12: Right to Left: Copy File: 32 
+2026-09-28 11:32:12: == Sync Started by On File Change First Full Analyze Upon Folder Connect
+2026-09-28 11:32:12: ConnectCloned connected to file:///home/kiwel/skills
+2026-09-28 11:32:12: ConnectCloned connected to file:///home/kiwel/skills
+2026-09-28 11:32:12: ConnectCloned connected to file:///home/kiwel/skills
+2026-09-28 11:32:12: ConnectCloned connected to file:///mnt/NAS/Sync/Agentes/Skills
+2026-09-28 11:32:12: ConnectCloned connected to file:///mnt/NAS/Sync/Agentes/Skills
+2026-09-28 11:32:12: ConnectCloned connected to file:///mnt/NAS/Sync/Agentes/Skills
+2026-09-28 11:32:12: Copy New '/mnt/NAS/Sync/Agentes/Skills/.tiberius-skill-sync.json' -> '/home/kiwel/skills/.tiberius-skill-sync.json' (6,869)
+2026-09-28 11:32:12: Copy Over '/mnt/NAS/Sync/Agentes/Skills/.hub/audit.log' -> '/home/kiwel/skills/.hub/audit.log' (822)
+2026-09-28 11:32:12: Copy Over '/mnt/NAS/Sync/Agentes/Skills/.bundled_manifest' -> '/home/kiwel/skills/.bundled_manifest' (2,727)
+2026-09-28 11:32:13: Copy New '/mnt/NAS/Sync/Agentes/Skills/.hub/scan-cache/8971e44b8bc8c6d22154a360b15b669861e61958a14664a6075cf1cd92451a3b-918632ecc25d1f7b.json' -> '/home/kiwel/skills/.hub/scan-cache/8971e44b8bc8c6d22154a360b15b669861e61958a14664a6075cf1cd92451a3b-918632ecc25d1f7b.json' (412)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/.hub/lock.json' -> '/home/kiwel/skills/.hub/lock.json' (18,919)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/.usage.json' -> '/home/kiwel/skills/.usage.json' (55,005)
+2026-09-28 11:32:13: Copy New '/mnt/NAS/Sync/Agentes/Skills/.hub/scan-cache/ac891a5e9c5872c5a63657b452ba679c7ebf61e9af8702734cf31307b68c9d82-ddc64b2c4a15ea9a.json' -> '/home/kiwel/skills/.hub/scan-cache/ac891a5e9c5872c5a63657b452ba679c7ebf61e9af8702734cf31307b68c9d82-ddc64b2c4a15ea9a.json' (2,175)
+2026-09-28 11:32:13: Copy New '/mnt/NAS/Sync/Agentes/Skills/.hub/scan-cache/daa88532b883bc7cea42d50e8f741b0bd5ff4cbddfaf6624a16e3095d84cf3a1-7080d0fca7928d16.json' -> '/home/kiwel/skills/.hub/scan-cache/daa88532b883bc7cea42d50e8f741b0bd5ff4cbddfaf6624a16e3095d84cf3a1-7080d0fca7928d16.json' (3,096)
+2026-09-28 11:32:13: > Copy Over '/mnt/NAS/Sync/Agentes/Skills/.hub/index-cache/hermes-index.json' -> '/home/kiwel/skills/.hub/index-cache/hermes-index.json' (49,056,048)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/.hub/index-cache/d4vinci_scrapling_agent-skill__.json' -> '/home/kiwel/skills/.hub/index-cache/d4vinci_scrapling_agent-skill__.json' (597)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/.hub/index-cache/browse_sh_catalog.json' -> '/home/kiwel/skills/.hub/index-cache/browse_sh_catalog.json' (716,591)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/.hub/index-cache/lobehub_index.json' -> '/home/kiwel/skills/.hub/index-cache/lobehub_index.json' (251,446)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/.hub/index-cache/official_optional_dirs.json' -> '/home/kiwel/skills/.hub/index-cache/official_optional_dirs.json' (4,897)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/autonomous-ai-agents/profile-skill-synchronization/SKILL.md' -> '/home/kiwel/skills/autonomous-ai-agents/profile-skill-synchronization/SKILL.md' (3,684)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/cmdb/CHANGELOG.md' -> '/home/kiwel/skills/cmdb/CHANGELOG.md' (4,278)
+2026-09-28 11:32:13: Copy New '/mnt/NAS/Sync/Agentes/Skills/cmdb/inventory/horus-alarm-guardian.md' -> '/home/kiwel/skills/cmdb/inventory/horus-alarm-guardian.md' (8,536)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/cmdb/inventory/index.md' -> '/home/kiwel/skills/cmdb/inventory/index.md' (7,572)
+2026-09-28 11:32:13: Copy New '/mnt/NAS/Sync/Agentes/Skills/cmdb/inventory/nexterm-access.md' -> '/home/kiwel/skills/cmdb/inventory/nexterm-access.md' (4,919)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/creative/ascii-art/SKILL.md' -> '/home/kiwel/skills/creative/ascii-art/SKILL.md' (10,614)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/creative/pretext/SKILL.md' -> '/home/kiwel/skills/creative/pretext/SKILL.md' (13,978)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/creative/pretext/references/patterns.md' -> '/home/kiwel/skills/creative/pretext/references/patterns.md' (10,450)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/devops/homelab-alert-monitoring/SKILL.md' -> '/home/kiwel/skills/devops/homelab-alert-monitoring/SKILL.md' (6,873)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/creative/pretext/templates/donut-orbit.html' -> '/home/kiwel/skills/creative/pretext/templates/donut-orbit.html' (53,211)
+2026-09-28 11:32:13: Copy Over '/mnt/NAS/Sync/Agentes/Skills/devops/hermes-cron-operations/references/telegram-delivery-diagnostics.md' -> '/home/kiwel/skills/devops/hermes-cron-operations/references/telegram-delivery-diagnostics.md' (3,702)
+2026-09-28 11:32:14: Copy Over '/mnt/NAS/Sync/Agentes/Skills/creative/pretext/templates/hello-orb-flow.html' -> '/home/kiwel/skills/creative/pretext/templates/hello-orb-flow.html' (3,443)
+2026-09-28 11:32:14: Copy Over '/mnt/NAS/Sync/Agentes/Skills/devops/homelab-scheduled-routines/SKILL.md' -> '/home/kiwel/skills/devops/homelab-scheduled-routines/SKILL.md' (7,373)
+2026-09-28 11:32:14: Copy New '/mnt/NAS/Sync/Agentes/Skills/tiberius-skills/planning-with-files' -> '/home/kiwel/skills/tiberius-skills/planning-with-files' (0)
+2026-09-28 11:32:14: Copy Over '/mnt/NAS/Sync/Agentes/Skills/mlops/inference/serving-llms-vllm/SKILL.md' -> '/home/kiwel/skills/mlops/inference/serving-llms-vllm/SKILL.md' (9,335)
+2026-09-28 11:32:14: Copy Over '/mnt/NAS/Sync/Agentes/Skills/mlops/inference/serving-llms-vllm/references/optimization.md' -> '/home/kiwel/skills/mlops/inference/serving-llms-vllm/references/optimization.md' (5,769)
+2026-09-28 11:32:14: Copy Over '/mnt/NAS/Sync/Agentes/Skills/mlops/inference/serving-llms-vllm/references/quantization.md' -> '/home/kiwel/skills/mlops/inference/serving-llms-vllm/references/quantization.md' (6,746)
+2026-09-28 11:32:14: Copy Over '/mnt/NAS/Sync/Agentes/Skills/mlops/inference/serving-llms-vllm/references/server-deployment.md' -> '/home/kiwel/skills/mlops/inference/serving-llms-vllm/references/server-deployment.md' (5,260)
+2026-09-28 11:32:14: Copy Over '/mnt/NAS/Sync/Agentes/Skills/mlops/inference/serving-llms-vllm/references/troubleshooting.md' -> '/home/kiwel/skills/mlops/inference/serving-llms-vllm/references/troubleshooting.md' (9,037)
+2026-09-28 11:32:16: < Copy Over '/mnt/NAS/Sync/Agentes/Skills/.hub/index-cache/hermes-index.json' -> '/home/kiwel/skills/.hub/index-cache/hermes-index.json' (49,056,048)
+2026-09-28 11:32:16: Save State File /home/kiwel/skills/_gsdata_/_file_state_v4._gs
+2026-09-28 11:32:16: Save State File /mnt/NAS/Sync/Agentes/Skills/_gsdata_/_file_state_v4._gs
+2026-09-28 11:32:19: == Sync Complete. Time: 00:00:07, Speed: 7.59 MB/s, OK: 147, Errors: 0

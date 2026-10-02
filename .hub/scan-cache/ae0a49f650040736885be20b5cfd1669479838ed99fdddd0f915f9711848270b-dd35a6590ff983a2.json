@@ -1,0 +1,13 @@
+{
+  "source": "toby-brainstorming",
+  "source_url": "toby-brainstorming",
+  "bundle_hash": "sha256:ae0a49f650040736885be20b5cfd1669479838ed99fdddd0f915f9711848270b",
+  "scanner_version": "skills-guard-v2",
+  "verdict": "safe",
+  "trust_level": "community",
+  "findings": [],
+  "rules": [],
+  "scanned_at": "2026-09-18T19:38:06.752354+00:00",
+  "summary": "toby-brainstorming: clean scan, no threats detected",
+  "fresh": true
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "query": "quero subir o Kartrack no meu cluster k3s no Proxmox. tenho mysql numa vm dedicada em 192.168.1.50, nfs no truenas em 192.168.1.10:/mnt/pool/uploads, metallb range 192.168.1.241-254, dominio kartrack.kiwel.dev com tls no cloudflare. docker hub publico kiwel/kartrack:v1. me da o plano completo e os manifests",
+    "should_trigger": true
+  },
+  {
+    "query": "tenho uma api fastapi dockerizada (imagem no docker hub: meuuser/minha-api:latest) e quero rodar ela no k3s que vou instalar numa vm no proxmox. banco postgres fica numa vm separada. como faço?",
+    "should_trigger": true
+  },
+  {
+    "query": "preciso migrar meu docker-compose pra kubernetes. é um homelab, single node, tenho nfs no nas pra persistência. quero nginx ingress e metallb. gera os manifests pra mim",
+    "should_trigger": true
+  },
+  {
+    "query": "qual o stack recomendado pra rodar aplicações no k3s em homelab? tenho proxmox com algumas vms sobrando, quero algo escalável mas simples de manter",
+    "should_trigger": true
+  },
+  {
+    "query": "me ajuda a planejar o deploy de um node.js app no kubernetes local. banco mysql externo, imagens no docker hub, storage nfs. quero entender as dependências antes de instalar qualquer coisa",
+    "should_trigger": true
+  },
+  {
+    "query": "já tenho o design do cluster definido: k3s single node, metallb 10.0.0.50-60, nginx ingress, nfs 10.0.0.5:/exports/app, mysql em 10.0.0.20. imagem docker hub privada myorg/backend:2.1.0. pula direto pra geração dos manifests",
+    "should_trigger": true
+  },
+  {
+    "query": "how do i deploy my dockerized app to k3s on proxmox? i have truenas for nfs storage and want nginx ingress with metallb. mysql is on a separate vm",
+    "should_trigger": true
+  },
+  {
+    "query": "quero gerar os yamls do kubernetes pra minha aplicação. é homelab, k3s, o app sobe na porta 3000, tem um volume em /app/data que precisa persistir no nfs, e variáveis de ambiente com credenciais do banco",
+    "should_trigger": true
+  },
+  {
+    "query": "instalei o k3s ontem na minha vm no proxmox mas não sei como subir minha app lá. tenho a imagem no docker hub e preciso de um ingress com domínio. me guia",
+    "should_trigger": true
+  },
+  {
+    "query": "preciso de um pvc com nfs no k3s pra armazenar uploads de imagem. quero que seja rwx pra poder escalar depois. como configuro o storage class e o provisioner?",
+    "should_trigger": true
+  },
+  {
+    "query": "como crio uma vm no proxmox com ubuntu 22.04? preciso de 4 vcpus e 8gb de ram, disco de 50gb no storage local-lvm",
+    "should_trigger": false
+  },
+  {
+    "query": "quero fazer deploy da minha aplicação no EKS da AWS. tenho um cluster já provisionado com terraform e quero configurar o ingress controller e o cert-manager pra tls",
+    "should_trigger": false
+  },
+  {
+    "query": "preciso otimizar meu dockerfile. o build tá demorando 8 minutos, quero usar multi-stage e cache de layers melhor. a imagem final ficou com 1.2gb",
+    "should_trigger": false
+  },
+  {
+    "query": "como configuro networkpolicy no kubernetes pra isolar os namespaces? tenho um cluster de produção e quero que o namespace frontend não consiga falar direto com o banco",
+    "should_trigger": false
+  },
+  {
+    "query": "meu pod fica crashando com OOMKilled. os logs mostram que o processo python tá consumindo 900mb mas o limit tá em 512mi. como ajusto os resource limits sem derrubar o serviço?",
+    "should_trigger": false
+  },
+  {
+    "query": "quero escrever um playbook ansible pra provisionar as vms do meu homelab automaticamente: instalar pacotes, configurar ssh, montar volumes nfs",
+    "should_trigger": false
+  },
+  {
+    "query": "como subo um ambiente de desenvolvimento com docker compose? tenho um backend fastapi, um frontend react e um postgres. quero hot reload nos dois serviços",
+    "should_trigger": false
+  },
+  {
+    "query": "tenho um cluster kubernetes no gke e quero escrever terraform pra gerenciar os node pools, configurar o workload identity e provisionar um cloud sql",
+    "should_trigger": false
+  },
+  {
+    "query": "preciso configurar o prometheus e grafana no meu cluster k8s pra monitorar latência das apis e uso de memória dos pods. qual o helm chart recomendado?",
+    "should_trigger": false
+  },
+  {
+    "query": "como configuro o nginx como reverse proxy pra minha aplicação? quero que ele sirva o frontend estático e faça proxy das requisições /api pra porta 8000 do backend",
+    "should_trigger": false
+  }
+]

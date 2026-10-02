@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: kartrack-uploads-pv
+  labels:
+    app.kubernetes.io/name: kartrack
+    storage: uploads
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: ""          # static provisioning — sem StorageClass dinâmica
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+    - timeo=600
+    - retrans=2
+  nfs:
+    server: 192.168.1.10
+    path: /mnt/pool/kartrack-uploads
+    readOnly: false

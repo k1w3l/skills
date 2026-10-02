@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kartrack
+  namespace: kartrack
+  labels:
+    app.kubernetes.io/name: kartrack
+spec:
+  # ClusterIP: tráfego externo chega via Ingress, não direto ao Service
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: kartrack
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8000

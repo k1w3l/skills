@@ -1,0 +1,9 @@
+2026-09-15T06:22:59Z BLOCKED twhidden-bitwarden clawhub:community dangerous 4_findings
+2026-09-15T06:23:41Z INSTALL bitwarden clawhub:community safe sha256:8087266805e05363
+2026-09-15T18:23:06Z INSTALL planning-with-files skills.sh:community safe sha256:c2054a84ec538373
+2026-09-17T14:54:40Z INSTALL mikrotik-api clawhub:community safe sha256:dc74c7f37a873978
+2026-09-17T14:56:12Z INSTALL mikrotik-encyclopedia clawhub:community safe sha256:e00bc3a6ff32ce7a
+2026-09-18T19:38:06Z INSTALL toby-brainstorming clawhub:community safe sha256:ae0a49f650040736
+2026-09-25T05:04:46Z INSTALL ascii-art official:builtin caution sha256:ac891a5e9c5872c5
+2026-09-25T05:04:49Z INSTALL pretext official:builtin safe sha256:8971e44b8bc8c6d2
+2026-09-25T05:04:50Z INSTALL serving-llms-vllm official:builtin dangerous sha256:daa88532b883bc7c

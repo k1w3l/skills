@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kartrack-uploads-pvc
+  namespace: kartrack
+  labels:
+    app.kubernetes.io/name: kartrack
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: ""          # deve casar com o PV acima
+  volumeName: kartrack-uploads-pv
+  resources:
+    requests:
+      storage: 10Gi

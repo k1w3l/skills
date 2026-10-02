@@ -1,0 +1,75 @@
+{
+  "eval_id": 1,
+  "eval_name": "kartrack-full-deploy",
+  "prompt": "Quero subir o Kartrack no meu cluster k3s no Proxmox. Tenho: MySQL em VM dedicada (192.168.1.50:3306, user: kartrack, password: kartrack, db: kartrack), NFS no TrueNAS: 192.168.1.10:/mnt/pool/kartrack-uploads, MetalLB range: 192.168.1.241-192.168.1.254, domínio kartrack.kiwel.dev com TLS terminando no Cloudflare/Pangolin externamente, Docker Hub público kiwel/kartrack:v1, k3s single node. Gera o plano e os manifests completos.",
+  "assertions": [
+    {
+      "text": "k8s/app/deployment.yaml exists in output",
+      "check": "file_exists",
+      "path": "k8s/app/deployment.yaml"
+    },
+    {
+      "text": "k8s/app/ingress.yaml exists in output",
+      "check": "file_exists",
+      "path": "k8s/app/ingress.yaml"
+    },
+    {
+      "text": "k8s/addons/metallb-pool.yaml exists in output",
+      "check": "file_exists",
+      "path": "k8s/addons/metallb-pool.yaml"
+    },
+    {
+      "text": "k8s/00-install.md exists in output",
+      "check": "file_exists",
+      "path": "k8s/00-install.md"
+    },
+    {
+      "text": "MetalLB pool contains correct IP range 192.168.1.241-192.168.1.254",
+      "check": "file_contains",
+      "path": "k8s/addons/metallb-pool.yaml",
+      "value": "192.168.1.241"
+    },
+    {
+      "text": "Deployment uses image kiwel/kartrack:v1",
+      "check": "file_contains",
+      "path": "k8s/app/deployment.yaml",
+      "value": "kiwel/kartrack:v1"
+    },
+    {
+      "text": "Deployment has imagePullPolicy: IfNotPresent",
+      "check": "file_contains",
+      "path": "k8s/app/deployment.yaml",
+      "value": "IfNotPresent"
+    },
+    {
+      "text": "PVC uses ReadWriteMany access mode",
+      "check": "file_contains",
+      "path": "k8s/app/pvc.yaml",
+      "value": "ReadWriteMany"
+    },
+    {
+      "text": "Ingress has correct hostname kartrack.kiwel.dev",
+      "check": "file_contains",
+      "path": "k8s/app/ingress.yaml",
+      "value": "kartrack.kiwel.dev"
+    },
+    {
+      "text": "Ingress has no tls: block (TLS is terminated externally)",
+      "check": "file_not_contains",
+      "path": "k8s/app/ingress.yaml",
+      "value": "tls:"
+    },
+    {
+      "text": "Secret contains DB_HOST pointing to 192.168.1.50",
+      "check": "file_contains",
+      "path": "k8s/app/secret.yaml",
+      "value": "192.168.1.50"
+    },
+    {
+      "text": "Install guide disables traefik on k3s",
+      "check": "file_contains",
+      "path": "k8s/00-install.md",
+      "value": "disable traefik"
+    }
+  ]
+}

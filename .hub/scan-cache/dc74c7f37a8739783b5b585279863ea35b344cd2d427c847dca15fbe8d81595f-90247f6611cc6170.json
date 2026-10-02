@@ -1,0 +1,25 @@
+{
+  "bundle_hash": "sha256:dc74c7f37a8739783b5b585279863ea35b344cd2d427c847dca15fbe8d81595f",
+  "scanner_version": "skills-guard-v5",
+  "source": "@bluemeda/mikrotik-api",
+  "source_url": "@bluemeda/mikrotik-api",
+  "verdict": "safe",
+  "trust_level": "community",
+  "findings": [
+    {
+      "pattern_id": "python_getenv_secret",
+      "severity": "medium",
+      "category": "exfiltration",
+      "file": "SKILL.md",
+      "line": 35,
+      "match": "password = os.getenv('MIKROTIK_PASSWORD')",
+      "description": "reads secret via os.getenv() (normal API-key access; informational)"
+    }
+  ],
+  "rules": [
+    "python_getenv_secret"
+  ],
+  "scanned_at": "2026-09-17T14:55:02.875043+00:00",
+  "summary": "mikrotik-api: safe \u2014 1 finding(s) in exfiltration",
+  "fresh": true
+}

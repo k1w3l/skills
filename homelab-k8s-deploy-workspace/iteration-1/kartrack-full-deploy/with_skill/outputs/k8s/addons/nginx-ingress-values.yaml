@@ -1,0 +1,25 @@
+# Helm values para ingress-nginx em homelab single-node com MetalLB L2
+# Ref: https://kubernetes.github.io/ingress-nginx/
+
+controller:
+  # MetalLB aloca um IP do pool para este Service
+  service:
+    type: LoadBalancer
+
+  # Configurações globais do nginx dentro do controller
+  config:
+    # Tamanho máximo de body para uploads (espelha client_max_body_size do nginx.conf.example)
+    proxy-body-size: "20m"
+    # Headers de proxy padrão
+    use-forwarded-headers: "true"
+    # Suporte a real IP quando atrás de Cloudflare/Pangolin
+    compute-full-forwarded-for: "true"
+
+  # Single-node: 1 réplica é suficiente
+  replicaCount: 1
+
+  # Recursos mínimos — homelab não precisa de limits rígidos
+  resources:
+    requests:
+      cpu: 100m
+      memory: 90Mi

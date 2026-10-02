@@ -1,0 +1,33 @@
+# Ingress opcional — use se preferir Traefik (ingress controller padrão do k3s)
+# em vez de expor diretamente via LoadBalancer.
+#
+# Se usar este Ingress:
+#   1. Mude o Service para ClusterIP (remova type: LoadBalancer e externalTrafficPolicy).
+#   2. Aplique este arquivo: kubectl apply -f k8s/app/ingress.yaml
+#
+# Como TLS termina no Cloudflare/Pangolin, não há TLS aqui dentro do cluster.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kartrack
+  namespace: kartrack
+  labels:
+    app.kubernetes.io/name: kartrack
+  annotations:
+    # Aumenta o limite de upload para fotos de veículos (padrão Traefik é 1m)
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+    # Cloudflare envia X-Forwarded-Proto=https; mantemos aware
+    ingress.kubernetes.io/proxy-body-size: "20m"
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: kartrack.kiwel.dev
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: kartrack
+                port:
+                  number: 80

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kartrack-uploads
+  namespace: kartrack
+  labels:
+    app.kubernetes.io/name: kartrack
+spec:
+  # RWX permite múltiplos pods lerem/escreverem — facilita escala futura
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs-client
+  resources:
+    requests:
+      # Ajuste conforme crescimento dos uploads; NFS não tem limite rígido
+      storage: 10Gi

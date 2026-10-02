@@ -1,0 +1,24 @@
+# Service tipo LoadBalancer — MetalLB atribuirá um IP do range 192.168.1.241-254.
+# O Cloudflare/Pangolin deve apontar kartrack.kiwel.dev para esse IP na porta 80.
+# TLS é terminado externamente; o cluster só precisa servir HTTP.
+apiVersion: v1
+kind: Service
+metadata:
+  name: kartrack
+  namespace: kartrack
+  labels:
+    app.kubernetes.io/name: kartrack
+  annotations:
+    # Fixa o IP no range MetalLB (descomente e escolha um IP disponível se necessário)
+    # metallb.universe.tf/loadBalancerIPs: "192.168.1.241"
+spec:
+  type: LoadBalancer
+  selector:
+    app: kartrack
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+      protocol: TCP
+  # Preserva IP de origem para logs corretos (X-Real-IP)
+  externalTrafficPolicy: Local

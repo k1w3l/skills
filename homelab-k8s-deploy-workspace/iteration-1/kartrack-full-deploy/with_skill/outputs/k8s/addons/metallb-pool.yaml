@@ -1,0 +1,20 @@
+---
+# MetalLB IP Address Pool — range disponível na rede local
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: homelab-pool
+  namespace: metallb-system
+spec:
+  addresses:
+    - 192.168.1.241-192.168.1.254
+---
+# L2Advertisement — anuncia os IPs alocados via ARP (L2 mode, sem BGP)
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: homelab-l2
+  namespace: metallb-system
+spec:
+  ipAddressPools:
+    - homelab-pool

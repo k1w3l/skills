@@ -1,0 +1,267 @@
+{
+  "schema": 1,
+  "source_root": "~/skills",
+  "description": "Explicit Tiberius-to-Jarvis skill export allowlist; paths are relative to source_root.",
+  "skills": [
+    {
+      "label": "apple/apple-notes",
+      "path": "apple/apple-notes"
+    },
+    {
+      "label": "apple/apple-reminders",
+      "path": "apple/apple-reminders"
+    },
+    {
+      "label": "apple/findmy",
+      "path": "apple/findmy"
+    },
+    {
+      "label": "apple/imessage",
+      "path": "apple/imessage"
+    },
+    {
+      "label": "autonomous-ai-agents/claude-code",
+      "path": "autonomous-ai-agents/claude-code"
+    },
+    {
+      "label": "autonomous-ai-agents/codex",
+      "path": "autonomous-ai-agents/codex"
+    },
+    {
+      "label": "autonomous-ai-agents/computer-use",
+      "path": "autonomous-ai-agents/computer-use"
+    },
+    {
+      "label": "autonomous-ai-agents/cross-profile-skill-access",
+      "path": "autonomous-ai-agents/cross-profile-skill-access"
+    },
+    {
+      "label": "autonomous-ai-agents/hermes-agent",
+      "path": "autonomous-ai-agents/hermes-agent"
+    },
+    {
+      "label": "autonomous-ai-agents/opencode",
+      "path": "autonomous-ai-agents/opencode"
+    },
+    {
+      "label": "autonomous-ai-agents/profile-skill-synchronization",
+      "path": "autonomous-ai-agents/profile-skill-synchronization"
+    },
+    {
+      "label": "creative/architecture-diagram",
+      "path": "creative/architecture-diagram"
+    },
+    {
+      "label": "creative/ascii-video",
+      "path": "creative/ascii-video"
+    },
+    {
+      "label": "creative/baoyu-infographic",
+      "path": "creative/baoyu-infographic"
+    },
+    {
+      "label": "creative/claude-design",
+      "path": "creative/claude-design"
+    },
+    {
+      "label": "creative/design-md",
+      "path": "creative/design-md"
+    },
+    {
+      "label": "creative/humanizer",
+      "path": "creative/humanizer"
+    },
+    {
+      "label": "creative/manim-video",
+      "path": "creative/manim-video"
+    },
+    {
+      "label": "creative/p5js",
+      "path": "creative/p5js"
+    },
+    {
+      "label": "creative/popular-web-designs",
+      "path": "creative/popular-web-designs"
+    },
+    {
+      "label": "creative/songwriting-and-ai-music",
+      "path": "creative/songwriting-and-ai-music"
+    },
+    {
+      "label": "creative/visual-asset-creation",
+      "path": "creative/visual-asset-creation"
+    },
+    {
+      "label": "devops/homelab-monitoring",
+      "path": "devops/homelab-monitoring"
+    },
+    {
+      "label": "devops/homelab-scheduled-routines",
+      "path": "devops/homelab-scheduled-routines"
+    },
+    {
+      "label": "devops/sdlc-review",
+      "path": "devops/sdlc-review"
+    },
+    {
+      "label": "email/email-inbox-triage",
+      "path": "email/email-inbox-triage"
+    },
+    {
+      "label": "email/himalaya",
+      "path": "email/himalaya"
+    },
+    {
+      "label": "external-agent-skills/planning-with-files",
+      "path": "planning-with-files"
+    },
+    {
+      "label": "jarvis-default/openbao-tiberius",
+      "path": "jarvis-default/openbao-tiberius"
+    },
+    {
+      "label": "media/gif-search",
+      "path": "media/gif-search"
+    },
+    {
+      "label": "media/songsee",
+      "path": "media/songsee"
+    },
+    {
+      "label": "media/youtube-content",
+      "path": "media/youtube-content"
+    },
+    {
+      "label": "note-taking/obsidian",
+      "path": "note-taking/obsidian"
+    },
+    {
+      "label": "productivity/airtable",
+      "path": "productivity/airtable"
+    },
+    {
+      "label": "productivity/box",
+      "path": "productivity/box"
+    },
+    {
+      "label": "productivity/document-to-action-items",
+      "path": "productivity/document-to-action-items"
+    },
+    {
+      "label": "productivity/docx",
+      "path": "productivity/docx"
+    },
+    {
+      "label": "productivity/google-workspace",
+      "path": "productivity/google-workspace"
+    },
+    {
+      "label": "productivity/maps",
+      "path": "productivity/maps"
+    },
+    {
+      "label": "productivity/meeting-action-items",
+      "path": "productivity/meeting-action-items"
+    },
+    {
+      "label": "productivity/notion",
+      "path": "productivity/notion"
+    },
+    {
+      "label": "productivity/pdf",
+      "path": "productivity/pdf"
+    },
+    {
+      "label": "productivity/powerpoint",
+      "path": "productivity/powerpoint"
+    },
+    {
+      "label": "productivity/product-price-monitor",
+      "path": "productivity/product-price-monitor"
+    },
+    {
+      "label": "productivity/teams-meeting-pipeline",
+      "path": "productivity/teams-meeting-pipeline"
+    },
+    {
+      "label": "productivity/weekly-review-planning",
+      "path": "productivity/weekly-review-planning"
+    },
+    {
+      "label": "productivity/xlsx",
+      "path": "productivity/xlsx"
+    },
+    {
+      "label": "research/arxiv",
+      "path": "research/arxiv"
+    },
+    {
+      "label": "research/competitor-news-monitor",
+      "path": "research/competitor-news-monitor"
+    },
+    {
+      "label": "research/grounded-citations",
+      "path": "research/grounded-citations"
+    },
+    {
+      "label": "research/llm-wiki",
+      "path": "research/llm-wiki"
+    },
+    {
+      "label": "social-media/xurl",
+      "path": "social-media/xurl"
+    },
+    {
+      "label": "software-development/codebase-inspection",
+      "path": "software-development/codebase-inspection"
+    },
+    {
+      "label": "software-development/dogfood",
+      "path": "software-development/dogfood"
+    },
+    {
+      "label": "software-development/github",
+      "path": "software-development/github"
+    },
+    {
+      "label": "software-development/hermes-agent-skill-authoring",
+      "path": "software-development/hermes-agent-skill-authoring"
+    },
+    {
+      "label": "software-development/inspecting-hermes-desktop-dom",
+      "path": "software-development/inspecting-hermes-desktop-dom"
+    },
+    {
+      "label": "software-development/node-inspect-debugger",
+      "path": "software-development/node-inspect-debugger"
+    },
+    {
+      "label": "software-development/python-debugpy",
+      "path": "software-development/python-debugpy"
+    },
+    {
+      "label": "software-development/requesting-code-review",
+      "path": "software-development/requesting-code-review"
+    },
+    {
+      "label": "software-development/simplify-code",
+      "path": "software-development/simplify-code"
+    },
+    {
+      "label": "software-development/spike",
+      "path": "software-development/spike"
+    },
+    {
+      "label": "software-development/systematic-debugging",
+      "path": "software-development/systematic-debugging"
+    },
+    {
+      "label": "software-development/test-driven-development",
+      "path": "software-development/test-driven-development"
+    },
+    {
+      "label": "web/blocked-page-recovery",
+      "path": "web/blocked-page-recovery"
+    }
+  ]
+}

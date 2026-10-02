@@ -1,0 +1,13 @@
+{
+  "bundle_hash": "sha256:8971e44b8bc8c6d22154a360b15b669861e61958a14664a6075cf1cd92451a3b",
+  "scanner_version": "skills-guard-v6",
+  "source": "official",
+  "source_url": "official/creative/pretext",
+  "verdict": "safe",
+  "trust_level": "builtin",
+  "findings": [],
+  "rules": [],
+  "scanned_at": "2026-09-25T05:04:49.160069+00:00",
+  "summary": "pretext: clean scan, no threats detected",
+  "fresh": true
+}

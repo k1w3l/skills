@@ -1,0 +1,54 @@
+{
+  "source": "twhidden-bitwarden",
+  "source_url": "twhidden-bitwarden",
+  "bundle_hash": "sha256:ce5f92c08aa7491d23c11dcf1b93d71e479035c79c343f56388d491b4da283f5",
+  "scanner_version": "skills-guard-v2",
+  "verdict": "dangerous",
+  "trust_level": "community",
+  "findings": [
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "README.md",
+      "line": 23,
+      "match": "- [Bitwarden CLI](https://bitwarden.com/help/cli/) (`bw`): `npm install -g @bitwarden/cli`",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "git_clone",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "README.md",
+      "line": 38,
+      "match": "git clone https://github.com/YOUR_USERNAME/openclaw-skill-bitwarden.git bitwarden",
+      "description": "clones a git repository at runtime"
+    },
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "SKILL.md",
+      "line": 21,
+      "match": "- Bitwarden CLI (`bw`) installed: `npm install -g @bitwarden/cli`",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "hardcoded_secret",
+      "severity": "critical",
+      "category": "credential_exposure",
+      "file": "SKILL.md",
+      "line": 35,
+      "match": "export BW_MASTER_PASSWORD=\"your-master-password\"",
+      "description": "possible hardcoded API key, token, or secret"
+    }
+  ],
+  "rules": [
+    "git_clone",
+    "hardcoded_secret",
+    "unpinned_npm_install"
+  ],
+  "scanned_at": "2026-09-15T06:22:59.866467+00:00",
+  "summary": "twhidden-bitwarden: dangerous \u2014 4 finding(s) in credential_exposure, supply_chain",
+  "fresh": true
+}

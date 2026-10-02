@@ -1,0 +1,23 @@
+{
+  "skill_name": "cmdb",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "O Pi-hole travou. Posso reiniciar o CT agora? Qual o IP e o que a casa perde enquanto ele volta?",
+      "expected_output": "CT 121, 192.168.1.9, portas 53 e 8080. Critico: so com autorizacao. Internet segue via MikroTik para 8.8.8.8; cai DNS local e adblock.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Quero achar onde o Horus e o Vikunja guardam o banco e se o monitor do Kartrack no Uptime Kuma aponta para o lugar certo.",
+      "expected_output": "Horus e VikunjaX usam Postgres no CT 123 (192.168.1.20:5432). Vikunja escuta em 192.168.1.19:3456. Kartrack de producao e o Ingress em 192.168.1.241; o monitor 133 ainda sonda 192.168.1.29:5173.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Aumentei a RAM do CT 125 para 2 GB. Atualiza o inventario.",
+      "expected_output": "Substitui 1024 por 2048 no indice e em guests.md, registra o motivo no CHANGELOG e nao empilha o valor antigo.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=Newt Pangolin site client for Sr. Kiwel homelab
+Documentation=https://docs.pangolin.net/manage/sites/install-site
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/newt/newt.env
+ExecStart=/usr/local/bin/newt
+Restart=always
+RestartSec=5s
+# Newt needs privileges to create/manage its tunnel interface.
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+
+[Install]
+WantedBy=multi-user.target

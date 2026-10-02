@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kartrack
+  namespace: kartrack
+  labels:
+    app.kubernetes.io/name: kartrack
+  annotations:
+    # Usar o controller ingress-nginx instalado via Helm
+    # (redundante com ingressClassName abaixo, mas melhora compatibilidade)
+
+    # Tamanho máximo de body para upload de fotos de veículos
+    # Espelha client_max_body_size 20M do nginx.conf.example
+    nginx.ingress.kubernetes.io/proxy-body-size: "20m"
+
+    # Passar headers de proxy corretos para o FastAPI
+    nginx.ingress.kubernetes.io/proxy-set-headers: "ingress-nginx/custom-headers"
+
+    # Timeouts generosos para chamadas FIPE (API externa pode ser lenta)
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "60"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "10"
+spec:
+  # ingressClassName seleciona o controller nginx instalado via Helm
+  ingressClassName: nginx
+  rules:
+    - host: kartrack.kiwel.dev
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: kartrack
+                port:
+                  name: http
+  # SEM bloco tls: — TLS é terminado externamente pelo Cloudflare/Pangolin
+  # O tráfego dentro do cluster é HTTP puro na porta 80 (correto e intencional)

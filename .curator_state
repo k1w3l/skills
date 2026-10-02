@@ -1,0 +1,9 @@
+{
+  "last_report_path": "/home/kiwel/.hermes/logs/curator/20260921-011601",
+  "last_run_at": "2026-09-21T01:16:01.477937+00:00",
+  "last_run_duration_seconds": 66.459042,
+  "last_run_summary": "auto: 22 marked stale, 32 archived; llm: skipped (consolidation off)",
+  "last_run_summary_shown_at": "2026-09-21T01:16:01.477937+00:00",
+  "paused": false,
+  "run_count": 14
+}

@@ -1,0 +1,24 @@
+# Helm values para nfs-subdir-external-provisioner
+# Ref: https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner
+
+nfs:
+  # TrueNAS NFS server
+  server: 192.168.1.10
+  # Export path configurado no TrueNAS
+  path: /mnt/pool/kartrack-uploads
+
+storageClass:
+  # Nome da StorageClass — referenciada nos PVCs da app
+  name: nfs-client
+  # Retain: não apaga os dados do NFS quando o PVC for deletado
+  reclaimPolicy: Retain
+  # Permite múltiplos pods montarem o mesmo volume (RWX)
+  accessModes: ReadWriteMany
+  # Subdiretório criado automaticamente por PVC: namespace-pvcname-pvname
+  pathPattern: "${.PVC.namespace}-${.PVC.name}"
+
+# Recursos mínimos para homelab
+resources:
+  requests:
+    cpu: 10m
+    memory: 32Mi

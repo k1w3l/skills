@@ -1,0 +1,87 @@
+Split: 12 train, 8 test (holdout=0.4)
+
+============================================================
+Iteration 1/5
+Description: Plans and generates Kubernetes deployment artifacts for homelab applications on k3s (Proxmox). Use this skill when the user wants to deploy an app to a local/homelab Kubernetes cluster, plan a k3s infrastructure stack, or generate K8s manifests. Trigger when the user mentions k3s, homelab K8s, deploying to Proxmox, MetalLB, NFS storage for K8s, Nginx Ingress on homelab, or says things like "subir no kubernetes", "deploy no k3s", "gerar manifests", "quero rodar no cluster", or similar. Also trigger when the user has a Dockerized app and asks how to run it on Kubernetes — even if they don't say "homelab" explicitly.
+============================================================
+Opening in existing browser session.
+Train: 18/36 correct, precision=100% recall=0% accuracy=50% (55.2s)
+  [FAIL] rate=0/3 expected=True: preciso de um pvc com nfs no k3s pra armazenar uploads de im
+  [FAIL] rate=0/3 expected=True: já tenho o design do cluster definido: k3s single node, meta
+  [FAIL] rate=0/3 expected=True: how do i deploy my dockerized app to k3s on proxmox? i have 
+  [FAIL] rate=0/3 expected=True: me ajuda a planejar o deploy de um node.js app no kubernetes
+  [FAIL] rate=0/3 expected=True: quero subir o Kartrack no meu cluster k3s no Proxmox. tenho 
+  [FAIL] rate=0/3 expected=True: tenho uma api fastapi dockerizada (imagem no docker hub: meu
+  [PASS] rate=0/3 expected=False: preciso configurar o prometheus e grafana no meu cluster k8s
+  [PASS] rate=0/3 expected=False: como crio uma vm no proxmox com ubuntu 22.04? preciso de 4 v
+  [PASS] rate=0/3 expected=False: tenho um cluster kubernetes no gke e quero escrever terrafor
+  [PASS] rate=0/3 expected=False: quero fazer deploy da minha aplicação no EKS da AWS. tenho u
+  [PASS] rate=0/3 expected=False: como subo um ambiente de desenvolvimento com docker compose?
+  [PASS] rate=0/3 expected=False: como configuro o nginx como reverse proxy pra minha aplicaçã
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: quero gerar os yamls do kubernetes pra minha aplicação. é ho
+  [FAIL] rate=0/3 expected=True: preciso migrar meu docker-compose pra kubernetes. é um homel
+  [FAIL] rate=0/3 expected=True: instalei o k3s ontem na minha vm no proxmox mas não sei como
+  [PASS] rate=0/3 expected=False: como configuro networkpolicy no kubernetes pra isolar os nam
+  [PASS] rate=0/3 expected=False: preciso otimizar meu dockerfile. o build tá demorando 8 minu
+  [PASS] rate=0/3 expected=False: quero escrever um playbook ansible pra provisionar as vms do
+  [FAIL] rate=0/3 expected=True: qual o stack recomendado pra rodar aplicações no k3s em home
+  [PASS] rate=0/3 expected=False: meu pod fica crashando com OOMKilled. os logs mostram que o 
+
+Improving description...
+Proposed (44.4s): Trigger when a user wants to: (1) deploy a containerized app to k3s or local/homelab Kubernetes; (2) generate Kubernetes manifests (Deployment, Service, Ingress, PVC, Secret) for a self-hosted cluster; (3) configure MetalLB, NFS storage provisioning, or Nginx Ingress for homelab k8s; or (4) plan a k3s infrastructure stack on Proxmox or local VMs. Also trigger when someone has a Dockerized app and asks how to run it on Kubernetes without specifying cloud or homelab. Handles Portuguese queries ('subir no k3s', 'gerar manifests', 'configurar nfs', 'deploy no cluster'). Do NOT trigger for cloud Kubernetes (EKS, GKE, AKS), pure Docker Compose, Proxmox VM creation without k8s, or standalone Nginx reverse proxy.
+
+============================================================
+Iteration 2/5
+Description: Trigger when a user wants to: (1) deploy a containerized app to k3s or local/homelab Kubernetes; (2) generate Kubernetes manifests (Deployment, Service, Ingress, PVC, Secret) for a self-hosted cluster; (3) configure MetalLB, NFS storage provisioning, or Nginx Ingress for homelab k8s; or (4) plan a k3s infrastructure stack on Proxmox or local VMs. Also trigger when someone has a Dockerized app and asks how to run it on Kubernetes without specifying cloud or homelab. Handles Portuguese queries ('subir no k3s', 'gerar manifests', 'configurar nfs', 'deploy no cluster'). Do NOT trigger for cloud Kubernetes (EKS, GKE, AKS), pure Docker Compose, Proxmox VM creation without k8s, or standalone Nginx reverse proxy.
+============================================================
+Train: 18/36 correct, precision=100% recall=0% accuracy=50% (54.1s)
+  [FAIL] rate=0/3 expected=True: já tenho o design do cluster definido: k3s single node, meta
+  [FAIL] rate=0/3 expected=True: how do i deploy my dockerized app to k3s on proxmox? i have 
+  [FAIL] rate=0/3 expected=True: preciso de um pvc com nfs no k3s pra armazenar uploads de im
+  [FAIL] rate=0/3 expected=True: me ajuda a planejar o deploy de um node.js app no kubernetes
+  [FAIL] rate=0/3 expected=True: quero subir o Kartrack no meu cluster k3s no Proxmox. tenho 
+  [FAIL] rate=0/3 expected=True: tenho uma api fastapi dockerizada (imagem no docker hub: meu
+  [PASS] rate=0/3 expected=False: preciso configurar o prometheus e grafana no meu cluster k8s
+  [PASS] rate=0/3 expected=False: quero fazer deploy da minha aplicação no EKS da AWS. tenho u
+  [PASS] rate=0/3 expected=False: tenho um cluster kubernetes no gke e quero escrever terrafor
+  [PASS] rate=0/3 expected=False: como crio uma vm no proxmox com ubuntu 22.04? preciso de 4 v
+  [PASS] rate=0/3 expected=False: como subo um ambiente de desenvolvimento com docker compose?
+  [PASS] rate=0/3 expected=False: como configuro o nginx como reverse proxy pra minha aplicaçã
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: qual o stack recomendado pra rodar aplicações no k3s em home
+  [FAIL] rate=0/3 expected=True: quero gerar os yamls do kubernetes pra minha aplicação. é ho
+  [FAIL] rate=0/3 expected=True: preciso migrar meu docker-compose pra kubernetes. é um homel
+  [FAIL] rate=0/3 expected=True: instalei o k3s ontem na minha vm no proxmox mas não sei como
+  [PASS] rate=0/3 expected=False: como configuro networkpolicy no kubernetes pra isolar os nam
+  [PASS] rate=0/3 expected=False: quero escrever um playbook ansible pra provisionar as vms do
+  [PASS] rate=0/3 expected=False: preciso otimizar meu dockerfile. o build tá demorando 8 minu
+  [PASS] rate=0/3 expected=False: meu pod fica crashando com OOMKilled. os logs mostram que o 
+
+Improving description...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/kiwel/.agents/skills/skill-creator/scripts/run_loop.py", line 328, in <module>
+    main()
+    ~~~~^^
+  File "/home/kiwel/.agents/skills/skill-creator/scripts/run_loop.py", line 293, in main
+    output = run_loop(
+        eval_set=eval_set,
+    ...<11 lines>...
+        log_dir=log_dir,
+    )
+  File "/home/kiwel/.agents/skills/skill-creator/scripts/run_loop.py", line 199, in run_loop
+    new_description = improve_description(
+        skill_name=name,
+    ...<6 lines>...
+        iteration=iteration,
+    )
+  File "/home/kiwel/.agents/skills/skill-creator/scripts/improve_description.py", line 144, in improve_description
+    text = _call_claude(prompt, model)
+  File "/home/kiwel/.agents/skills/skill-creator/scripts/improve_description.py", line 44, in _call_claude
+    raise RuntimeError(
+        f"claude -p exited {result.returncode}\nstderr: {result.stderr}"
+    )
+RuntimeError: claude -p exited 1
+stderr: 

@@ -1,0 +1,23 @@
+{
+  "skill_name": "omarchy-plugin",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quero um plugin de barra no Omarchy que mostre a hora e abra um painel com a data completa ao clicar. Não edites /usr/share/omarchy. Segue o contrato oficial de plugins Quattro.",
+      "expected_output": "Clona omarchy.clock para ~/.config/omarchy/plugins/<user>.clock, mantém kinds bar-widget, valida com omarchy plugin validate, não declara kind panel extra, não arranca um segundo Quickshell.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Empacota o plugin em ~/git/custom-clock para o marketplace: id permanente io.github.kiwel.custom-clock, README com Install/Usage/Configure/Remove, LICENSE, e o corpo do issue do marketplace — mas não abras o issue ainda.",
+      "expected_output": "Repo com manifest.json na raiz sem omarchy.clonedFrom, README com omarchy plugin add/remove, issue body com as seis headings e checklist; não chama gh issue create sem aprovação.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "O meu overlay valida mas omarchy-shell meu.plugin ping diz Target not found, e um script do plugin tentou correr como /add-wallpaper.sh. Diagnostica.",
+      "expected_output": "Explica IpcHandler no service keepLoaded, summon vs target em falta, e __sourceDir removido — usar Qt.resolvedUrl('.').",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.agents
+.archive
+.bundled_manifest
+.curator_backups
+.curator_ledger.jsonl
+.curator_state
+.curator_suppressed
+.git/
+.hermes/
+.hub/
+.locks/
+.tiberius-skill-sync.json
+.usage.json
+.usage.json.lock
+_gsdata_/
+
+

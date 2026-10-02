@@ -1,0 +1,62 @@
+2026-09-30 12:16:20: -- Analysis Started by On File Change First Full Analyze Upon Folder Connect
+2026-09-30 12:16:20: L: Reading State File /home/kiwel/skills/_gsdata_/_file_state_v4._gs
+2026-09-30 12:16:21: R: Reading State File /mnt/NAS/Sync/Agentes/Skills/_gsdata_/_file_state_v4._gs
+2026-09-30 12:16:28: Changes: 47, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 4474
+2026-09-30 12:16:28: Left to Right: Copy File: 47 
+2026-09-30 12:16:28: == Sync Started by On File Change First Full Analyze Upon Folder Connect
+2026-09-30 12:16:28: ConnectCloned connected to file:///home/kiwel/skills
+2026-09-30 12:16:28: ConnectCloned connected to file:///home/kiwel/skills
+2026-09-30 12:16:28: ConnectCloned connected to file:///home/kiwel/skills
+2026-09-30 12:16:28: ConnectCloned connected to file:///mnt/NAS/Sync/Agentes/Skills
+2026-09-30 12:16:28: ConnectCloned connected to file:///mnt/NAS/Sync/Agentes/Skills
+2026-09-30 12:16:28: ConnectCloned connected to file:///mnt/NAS/Sync/Agentes/Skills
+2026-09-30 12:16:28: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/PORT_NOTES.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/PORT_NOTES.md' (1,712)
+2026-09-30 12:16:28: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/SKILL.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/SKILL.md' (10,490)
+2026-09-30 12:16:28: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/analysis-framework.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/analysis-framework.md' (7,490)
+2026-09-30 12:16:28: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/base-prompt.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/base-prompt.md' (1,082)
+2026-09-30 12:16:28: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/structured-content-template.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/structured-content-template.md' (5,515)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/bento-grid.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/bento-grid.md' (851)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/binary-comparison.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/binary-comparison.md' (1,278)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/bridge.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/bridge.md' (907)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/circular-flow.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/circular-flow.md' (759)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/comic-strip.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/comic-strip.md' (847)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/comparison-matrix.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/comparison-matrix.md' (893)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/dashboard.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/dashboard.md' (776)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/dense-modules.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/dense-modules.md' (3,673)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/funnel.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/funnel.md' (821)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/hierarchical-layers.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/hierarchical-layers.md' (1,180)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/hub-spoke.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/hub-spoke.md' (865)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/iceberg.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/iceberg.md' (884)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/isometric-map.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/isometric-map.md' (833)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/jigsaw.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/jigsaw.md' (844)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/linear-progression.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/linear-progression.md' (1,238)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/periodic-table.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/periodic-table.md' (774)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/story-mountain.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/story-mountain.md' (815)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/structural-breakdown.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/structural-breakdown.md' (1,118)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/tree-branching.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/tree-branching.md' (913)
+2026-09-30 12:16:29: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/venn-diagram.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/venn-diagram.md' (825)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/layouts/winding-roadmap.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/layouts/winding-roadmap.md' (799)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/aged-academia.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/aged-academia.md' (990)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/bold-graphic.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/bold-graphic.md' (920)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/chalkboard.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/chalkboard.md' (2,204)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/claymation.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/claymation.md' (654)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/corporate-memphis.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/corporate-memphis.md' (612)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/craft-handmade.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/craft-handmade.md' (1,429)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/cyberpunk-neon.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/cyberpunk-neon.md' (625)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/hand-drawn-edu.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/hand-drawn-edu.md' (2,648)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/ikea-manual.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/ikea-manual.md' (572)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/kawaii.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/kawaii.md' (653)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/knolling.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/knolling.md' (584)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/lego-brick.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/lego-brick.md' (574)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/morandi-journal.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/morandi-journal.md' (2,233)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/origami.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/origami.md' (607)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/pixel-art.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/pixel-art.md' (562)
+2026-09-30 12:16:30: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/pop-laboratory.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/pop-laboratory.md' (2,174)
+2026-09-30 12:16:31: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/retro-pop-grid.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/retro-pop-grid.md' (2,106)
+2026-09-30 12:16:31: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/storybook-watercolor.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/storybook-watercolor.md' (703)
+2026-09-30 12:16:31: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/subway-map.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/subway-map.md' (591)
+2026-09-30 12:16:31: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/technical-schematic.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/technical-schematic.md' (983)
+2026-09-30 12:16:31: Copy Over '/home/kiwel/skills/creative/baoyu-infographic/references/styles/ui-wireframe.md' -> '/mnt/NAS/Sync/Agentes/Skills/creative/baoyu-infographic/references/styles/ui-wireframe.md' (596)
+2026-09-30 12:16:31: Save State File /home/kiwel/skills/_gsdata_/_file_state_v4._gs
+2026-09-30 12:16:31: Save State File /mnt/NAS/Sync/Agentes/Skills/_gsdata_/_file_state_v4._gs
+2026-09-30 12:16:31: == Sync Complete. Time: 00:00:03, Speed: 0.00/s, OK: 47, Errors: 0

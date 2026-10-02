@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kartrack
+  namespace: kartrack
+  labels:
+    app.kubernetes.io/name: kartrack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: kartrack
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: kartrack
+    spec:
+      containers:
+        - name: kartrack
+          image: kiwel/kartrack:v1
+          # IfNotPresent evita rate limit do Docker Hub em pulls desnecessários
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
+
+          # Variáveis secretas injetadas do Secret (DB, JWT key)
+          envFrom:
+            - secretRef:
+                name: kartrack-secret
+
+          # Variáveis não-secretas diretamente no spec
+          env:
+            - name: TZ
+              value: "America/Sao_Paulo"
+
+          # Readiness: só recebe tráfego quando o app responder
+          readinessProbe:
+            httpGet:
+              path: /api/docs
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 15
+            failureThreshold: 3
+
+          # Liveness: reinicia o pod se o app travar
+          livenessProbe:
+            httpGet:
+              path: /api/docs
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            failureThreshold: 5
+
+          volumeMounts:
+            # Espelha o volume do docker-compose: ./uploads/vehicles → /app/uploads/vehicles
+            - name: uploads
+              mountPath: /app/uploads/vehicles
+
+          # Sem resource limits por padrão em homelab — adicionar se necessário
+
+      volumes:
+        - name: uploads
+          persistentVolumeClaim:
+            claimName: kartrack-uploads
+
+      # Garante que o pod seja reagendado se o nó reiniciar
+      restartPolicy: Always
