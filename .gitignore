@@ -1,7 +1,7 @@
 .agents
 .archive
 .bundled_manifest
-.curator_backups
+.curator_backups/
 .curator_ledger.jsonl
 .curator_state
 .curator_suppressed
